@@ -57,7 +57,7 @@ public sealed partial class StartView : UserControl
                 {
                     Text = patientCase.Presentation,
                     TextWrapping = TextWrapping.Wrap,
-                    Foreground = (Microsoft.UI.Xaml.Media.Brush)Application.Current.Resources["TextFillColorSecondaryBrush"]
+                    Foreground = (Microsoft.UI.Xaml.Media.Brush)Microsoft.UI.Xaml.Application.Current.Resources["TextFillColorSecondaryBrush"]
                 }
             }
         };
