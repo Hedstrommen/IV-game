@@ -18,6 +18,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="ProgressText"
                        Grid.Column="0"
@@ -26,6 +27,11 @@
                        Grid.Column="1"
                        VerticalAlignment="Center"
                        FontWeight="SemiBold" />
+            <Button x:Name="ExitButton"
+                    Grid.Column="2"
+                    Content="Avsluta"
+                    VerticalAlignment="Center"
+                    Click="OnExitClick" />
         </Grid>
         <ProgressBar x:Name="StepProgress" Grid.Row="1" />
         <Border Grid.Row="2"
