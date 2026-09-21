@@ -1,0 +1,8 @@
+Icons in this folder are from OpenMoji (https://openmoji.org),
+obtained from https://github.com/hfg-gmuend/openmoji (color/72x72 PNGs).
+
+OpenMoji is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License (CC BY-SA 4.0). To view a copy of the license, visit
+https://creativecommons.org/licenses/by-sa/4.0/.
+
+Each icon file is named by its Unicode code point, e.g. 1F489.png is "syringe".

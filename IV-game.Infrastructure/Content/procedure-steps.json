@@ -78,24 +78,114 @@
     "id": "prep-04",
     "phase": "Forberedelser",
     "orderIndex": 4,
-    "title": "Material och smärtlindring",
-    "prompt": "Hur förbereder du materialet, och vad erbjuder du Anna som har stickrädsla?",
-    "kind": "MultipleChoice",
-    "sourceReference": "Vårdhandboken – Perifer venkateter: Förberedelser",
+    "title": "Plocka material",
+    "prompt": "Öppna skåpet och klicka på allt du behöver för att lägga in en PVK på Anna. Anna har stickrädsla – kom ihåg smärtlindring. Klicka på \"Klar – fortsätt\" när du har allt.",
+    "kind": "ItemSelection",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Förberedelser, material och smärtlindring",
     "actions": [
       {
         "id": "prep-04-a",
-        "label": "All utrustning inom räckhåll, spola igenom eventuell förlängningsslang med Natriumklorid 9 mg/ml, och erbjud smärtlindring med bedövningskräm eller bedövningsplåster.",
+        "label": "PVK-kateter",
+        "icon": "1FA7A",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Förbered allt material och erbjud smärtlindring till barn och patienter med stickrädsla."
+        "feedback": "Rätt! En PVK i lagom storlek är grundutrustningen."
       },
       {
         "id": "prep-04-b",
-        "label": "Låt sängen ligga tills efter sticket, och avstå smärtlindring.",
+        "label": "Skyddshandskar",
+        "icon": "1FA7A",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Skyddshandskar (ej sterila) behövs vid inläggning."
+      },
+      {
+        "id": "prep-04-c",
+        "label": "Klorhexidinsprit",
+        "icon": "1F6B0",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Klorhexidinsprit används för desinfektion av insticksstället."
+      },
+      {
+        "id": "prep-04-d",
+        "label": "Natriumklorid 9 mg/ml",
+        "icon": "1F489",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! NaCl 9 mg/ml används för att spola och kontrollera läget."
+      },
+      {
+        "id": "prep-04-e",
+        "label": "Blodtrycksmanschett (stas)",
+        "icon": "1FA7B",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Manschetten används för att stasa och vidga venen."
+      },
+      {
+        "id": "prep-04-f",
+        "label": "Högpermeabelt polyuretanförband",
+        "icon": "1FA79",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Fixeringen ska vara ett högpermeabelt polyuretanförband."
+      },
+      {
+        "id": "prep-04-g",
+        "label": "Etikett för märkning",
+        "icon": "1F3F7",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Datum, klockslag och signatur märks på avsedd etikett."
+      },
+      {
+        "id": "prep-04-h",
+        "label": "Bedövningskräm/plåster (EMLA)",
+        "icon": "1FA79",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Anna har stickrädsla – erbjuda smärtlindring med bedövningskräm eller plåster."
+      },
+      {
+        "id": "prep-04-i",
+        "label": "Sterila handskar",
+        "icon": "1FA78",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Allt material ska förberedas inom räckhåll, och patienter med stickrädsla ska erbjudas smärtlindring."
+        "feedback": "Fel. Sterila handskar behövs bara om du behöver palpera efter desinfektion – inte som standard."
+      },
+      {
+        "id": "prep-04-j",
+        "label": "Mandräng återföringspaket",
+        "icon": "1F5D1",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! En utdragen mandräng får ALDRIG återföras – den kan avklippa katetern."
+      },
+      {
+        "id": "prep-04-k",
+        "label": "Nålbarbricka (flera stick)",
+        "icon": "1F4AA",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel! Antalet sticktillfällen per patient ska begränsas. Förbered inte för flera onödiga försök."
+      },
+      {
+        "id": "prep-04-l",
+        "label": "Vanlig tejp",
+        "icon": "1F9F6",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vanlig tejp är inte ett godkänt fixeringsförband och gör att insticksstället inte kan inspekteras."
+      },
+      {
+        "id": "prep-04-m",
+        "label": "Ventilhus till slangen",
+        "icon": "1F517",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Tillbehör till slangen är inget du behöver vid en enkel inläggning utan infusion pågående."
       }
     ]
   },
@@ -103,24 +193,55 @@
     "id": "ven-01",
     "phase": "ValAvVen",
     "orderIndex": 5,
-    "title": "Val av ven – Anna",
-    "prompt": "Du har palperat och utvärderat Annas venstatus. Vilken prioriteringsordning gäller vid val av ven?",
-    "kind": "MultipleChoice",
-    "sourceReference": "Vårdhandboken – Perifer venkateter: Val av ven och punktionsställe",
+    "title": "Prioriteringsordning",
+    "prompt": "Klicka på platsarna i rätt prioriteringsordning enligt Vårdhandboken (bäst först).",
+    "kind": "OrderSelection",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Val av ven och punktionsställe, prioriteringsordning",
     "actions": [
       {
         "id": "ven-01-a",
-        "label": "1. Underarm (ej armveck), 2. Handrygg, 3. Armveck, 4. Överarm, 5. Nedre extremitet.",
+        "label": "Underarm (ej armveck)",
+        "icon": "1F446",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Det är Vårdhandbokens prioriteringsordning. Välj raka vener med stor diameter på underarmen."
+        "order": 1,
+        "feedback": "Rätt! Underarmen är nummer 1 – välj raka vener med stor diameter."
       },
       {
         "id": "ven-01-b",
-        "label": "1. Armveck, 2. Överarm, 3. Underarm, 4. Handrygg.",
-        "isCorrect": false,
+        "label": "Handrygg",
+        "icon": "270B",
+        "isCorrect": true,
         "isCritical": false,
-        "feedback": "Fel. Vener över leder, även armveck, ska undvikas när det är möjligt."
+        "order": 2,
+        "feedback": "Rätt! Handryggen är nummer 2 i prioriteringsordningen."
+      },
+      {
+        "id": "ven-01-c",
+        "label": "Armveck",
+        "icon": "1F4AA",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 3,
+        "feedback": "Rätt! Armveck är nummer 3 – vener över leder ska undvikas när det är möjligt."
+      },
+      {
+        "id": "ven-01-d",
+        "label": "Överarm",
+        "icon": "1F4AA",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 4,
+        "feedback": "Rätt! Överarm är nummer 4 i prioriteringsordningen."
+      },
+      {
+        "id": "ven-01-e",
+        "label": "Nedre extremitet",
+        "icon": "1F447",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 5,
+        "feedback": "Rätt! Nedre extremitet är nummer 5 – undvik när alternativa platser finns."
       }
     ]
   },
@@ -138,28 +259,32 @@
         "label": "Vänster underarm – dialysfistel",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Aldrig sticka i arm med dialysfistel. Det kan förstöra fisteln, vilket är patientens livlina för dialys."
+        "feedback": "Fel, allvarligt! Aldrig sticka i arm med dialysfistel. Det kan förstöra fisteln, vilket är patientens livlina för dialys.",
+        "icon": "1F6AB"
       },
       {
         "id": "ven-02-b",
         "label": "Höger underarm – tidigare trombos",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Extremitet där patienten tidigare haft trombos ska undvikas."
+        "feedback": "Fel, allvarligt! Extremitet där patienten tidigare haft trombos ska undvikas.",
+        "icon": "1F6AB"
       },
       {
         "id": "ven-02-c",
         "label": "Höger handrygg – rak, väl palpabel ven",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Höger handrygg är bästa valet: vänster arm är utesluten (dialysfistel) och höger underarm har tidigare trombos. Handrygg är prioritetsordning nummer 2."
+        "feedback": "Rätt! Höger handrygg är bästa valet: vänster arm är utesluten (dialysfistel) och höger underarm har tidigare trombos. Handrygg är prioritetsordning nummer 2.",
+        "icon": "270B"
       },
       {
         "id": "ven-02-d",
         "label": "Höger armveck – palpabel ven",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Vener över leder, även armveck, ska undvikas när det är möjligt. Höger handrygg är ett bättre val."
+        "feedback": "Fel. Vener över leder, även armveck, ska undvikas när det är möjligt. Höger handrygg är ett bättre val.",
+        "icon": "270B"
       }
     ]
   },
@@ -217,24 +342,63 @@
     "id": "inl-02",
     "phase": "Inlaggning",
     "orderIndex": 9,
-    "title": "Desinfektion",
-    "prompt": "Hur desinficerar du hudområdet?",
-    "kind": "MultipleChoice",
+    "title": "Desinfektion – gör i rätt ordning",
+    "prompt": "Klicka i rätt ordning hur du desinficerar huden före sticket.",
+    "kind": "OrderSelection",
     "sourceReference": "Vårdhandboken – Perifer venkateter: Desinfektion med klorhexidinsprit",
     "actions": [
       {
-        "id": "inl-02-a",
-        "label": "Klorhexidinsprit, genomblöt kompress, minst 5 sekunder, huden fuktig i minst 30 sekunder, låt lufttorka.",
+        "id": "inl-02-1",
+        "label": "Ta en kompress och genomblöt den med klorhexidinsprit",
+        "icon": "1F6B0",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Klorhexidinglukonat 5 mg/mL + etanol 70 % (eller motsvarande), ordentligt genomblöt kompress i minst 5 s, fuktig i minst 30 s, lufttorka. Berör sedan inte insticksstället."
+        "order": 1,
+        "feedback": "Rätt! Börja med en ordentligt genomblöt kompress."
       },
       {
-        "id": "inl-02-b",
-        "label": "Snabbt svep med sprit, stick direkt.",
+        "id": "inl-02-2",
+        "label": "Fukta hela hudområdet i minst 5 sekunder",
+        "icon": "1F32A",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 2,
+        "feedback": "Rätt! Huden ska fuktas i minst 5 sekunder."
+      },
+      {
+        "id": "inl-02-3",
+        "label": "Låt huden vara fuktig i minst 30 sekunder",
+        "icon": "23F0",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 3,
+        "feedback": "Rätt! Huden ska förbli fuktig i minst 30 sekunder."
+      },
+      {
+        "id": "inl-02-4",
+        "label": "Låt huden lufttorka",
+        "icon": "1F32A",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 4,
+        "feedback": "Rätt! Huden ska lufttorka innan du sticker – annars kvarstår smittrisk."
+      },
+      {
+        "id": "inl-02-5",
+        "label": "Rör inte vid insticksstället efteråt",
+        "icon": "1F6AB",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 5,
+        "feedback": "Rätt! Insticksstället berörs inte efter desinfektion."
+      },
+      {
+        "id": "inl-02-6",
+        "label": "Snabbsvep med sprit och stick direkt",
+        "icon": "274C",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Otillräcklig desinfektion ger risk för kateterrelaterad infektion. Huden ska lufttorka efter desinfektion."
+        "feedback": "Fel, allvarligt! Otillräcklig desinfektion ger risk för kateterrelaterad infektion."
       }
     ]
   },
@@ -252,14 +416,16 @@
         "label": "Mandrängen dras ut och läggs direkt i avsedd avfallsbehållare. Den återförs aldrig in i PVK.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! En utdragen mandräng får aldrig återföras in i PVK eftersom katetern då kan skadas. Mandrängen läggs direkt i avfallsbehållaren."
+        "feedback": "Rätt! En utdragen mandräng får aldrig återföras in i PVK eftersom katetern då kan skadas. Mandrängen läggs direkt i avfallsbehållaren.",
+        "icon": "1FA7A"
       },
       {
         "id": "inl-03-b",
         "label": "Mandrängen kan återföras försiktigt om det behövs ett nytt försök.",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! En utdragen mandräng får ALDRIG återföras – risken är att katetern skadas (avklipps av mandrängen)."
+        "feedback": "Fel, allvarligt! En utdragen mandräng får ALDRIG återföras – risken är att katetern skadas (avklipps av mandrängen).",
+        "icon": "1F5D1"
       }
     ]
   },
@@ -317,24 +483,42 @@
     "id": "fix-01",
     "phase": "FixeringOchDokumentation",
     "orderIndex": 13,
-    "title": "Fixering av PVK",
-    "prompt": "Hur fixerar du PVK?",
-    "kind": "MultipleChoice",
+    "title": "Välj fixering",
+    "prompt": "Klicka på det material du använder för att fixera PVK:n så att insticksstället kan inspekteras.",
+    "kind": "ItemSelection",
     "sourceReference": "Vårdhandboken – Perifer venkateter: Fixering, högpermeabelt polyuretanförband",
     "actions": [
       {
         "id": "fix-01-a",
-        "label": "Med högpermeabelt polyuretanförband så att insticksstället kan inspekteras genom förbandet och läget inte rubbas.",
+        "label": "Högpermeabelt polyuretanförband",
+        "icon": "1FA79",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! PVK fixeras noggrant med högpermeabelt polyuretanförband så att insticksstället kan inspekteras och läget inte rubbas."
+        "feedback": "Rätt! Förbandet ska vara högpermeabelt polyuretan så att insticksstället kan inspekteras."
       },
       {
         "id": "fix-01-b",
-        "label": "Med vanlig tejp direkt över insticksstället.",
+        "label": "Vanlig tejp direkt över insticksstället",
+        "icon": "1F9F6",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Vanlig tejp ger inte möjlighet att inspektera insticksstället och fixerar sämre."
+        "feedback": "Fel. Vanlig tejp gör att insticksstället inte kan inspekteras och fixerar sämre."
+      },
+      {
+        "id": "fix-01-c",
+        "label": "Gasmbindel runt armen",
+        "icon": "1FA73",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Gasmbindel döljer insticksstället och ger inte möjlighet till inspektion."
+      },
+      {
+        "id": "fix-01-d",
+        "label": "Steril kompress under tejp",
+        "icon": "1FA79",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Kompressen behövs inte – förbandet ska ligga transparent mot huden."
       }
     ]
   },
@@ -343,23 +527,49 @@
     "phase": "FixeringOchDokumentation",
     "orderIndex": 14,
     "title": "Märkning",
-    "prompt": "Vad skriver du på förbandet/etiketten?",
-    "kind": "MultipleChoice",
+    "prompt": "Vad märker du på etiketten? Klicka på allt som ska med.",
+    "kind": "ItemSelection",
     "sourceReference": "Vårdhandboken – Perifer venkateter: Märk med datum, klockslag och signatur",
     "actions": [
       {
         "id": "fix-02-a",
-        "label": "Datum, klockslag och signatur – på avsedd etikett, inte direkt på förbandet.",
+        "label": "Datum",
+        "icon": "1F5D3",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Märk med datum, klockslag och signatur. Använd avsedd etikett på förlängningsslang – skriv aldrig direkt på förbandet eftersom plasten då kan skadas."
+        "feedback": "Rätt! Datumet när PVK lades in ska märkas."
       },
       {
         "id": "fix-02-b",
-        "label": "Bara datum, det räcker.",
+        "label": "Klockslag",
+        "icon": "23F0",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Klockslaget ska märkas."
+      },
+      {
+        "id": "fix-02-c",
+        "label": "Signatur",
+        "icon": "1F570",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Din signatur ska märkas."
+      },
+      {
+        "id": "fix-02-d",
+        "label": "Patientens vikt",
+        "icon": "1F4CB",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Både datum, klockslag och signatur krävs för spårbarhet och att kunna följa upp bytestid."
+        "feedback": "Fel. Vikten dokumenteras i journalen, inte på PVK-förbandet."
+      },
+      {
+        "id": "fix-02-e",
+        "label": "Skriv direkt på förbandet",
+        "icon": "274C",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Skriv aldrig direkt på förbandet – plasten kan skadas. Använd avsedd etikett."
       }
     ]
   },
@@ -368,23 +578,53 @@
     "phase": "FixeringOchDokumentation",
     "orderIndex": 15,
     "title": "Yttre förband och dokumentation",
-    "prompt": "Vad är syftet med det yttre förbandet, och vad dokumenterar du i journalen?",
-    "kind": "MultipleChoice",
+    "prompt": "Klicka i rätt ordning: säkra slangarna och dokumentera i journalen.",
+    "kind": "OrderSelection",
     "sourceReference": "Vårdhandboken – Perifer venkateter: Yttre förband och dokumentation",
     "actions": [
       {
-        "id": "fix-03-a",
-        "label": "Yttre förband fixerar slangar så att PVK inte rubbas och minskar risken för tromboflebit. Jag dokumenterar tidpunkt, storlek och placering.",
+        "id": "fix-03-1",
+        "label": "Fäst tillslutare och slangarna mot armen med yttre förband",
+        "icon": "1F9F6",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Yttre förband skyddar mot att PVK rubbas och minskar mekanisk retning. Journalen ska innehålla tidpunkt för inläggning samt storlek och placering av PVK."
+        "order": 1,
+        "feedback": "Rätt! Slangarna ska fixeras så att PVK inte rubbas."
       },
       {
-        "id": "fix-03-b",
-        "label": "Yttre förband behövs inte, och journalen klarar sig utan detaljer.",
+        "id": "fix-03-2",
+        "label": "Dokumentera tidpunkt för inläggning i journalen",
+        "icon": "1F570",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 2,
+        "feedback": "Rätt! Tidpunkten för inläggningen ska dokumenteras."
+      },
+      {
+        "id": "fix-03-3",
+        "label": "Dokumentera PVK:ens storlek",
+        "icon": "1F4CB",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 3,
+        "feedback": "Rätt! Storleken på PVK ska dokumenteras."
+      },
+      {
+        "id": "fix-03-4",
+        "label": "Dokumentera placering (vilken arm/ven)",
+        "icon": "1F440",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 4,
+        "feedback": "Rätt! Placeringen ska dokumenteras."
+      },
+      {
+        "id": "fix-03-5",
+        "label": "Lämna slangarna löst hängande",
+        "icon": "274C",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Lös hängande slang ökar risken för tromboflebit och utdragning. Dokumentation är lagstadgad."
+        "feedback": "Fel, allvarligt! Lösa slangar ökar risken för utdragning och tromboflebit."
       }
     ]
   },
@@ -417,24 +657,81 @@
     "id": "avl-02",
     "phase": "Avlagsnande",
     "orderIndex": 17,
-    "title": "Tillvägagångssätt vid avlägsnande",
-    "prompt": "Vilken arbetsgång är korrekt vid avlägsnande av PVK?",
-    "kind": "MultipleChoice",
+    "title": "Avlägsnande – rätt arbetsgång",
+    "prompt": "Klicka i rätt ordning när du avlägsnar PVK.",
+    "kind": "OrderSelection",
     "sourceReference": "Vårdhandboken – Perifer venkateter: Tillvägagångssätt vid avlägsnande",
     "actions": [
       {
-        "id": "avl-02-a",
-        "label": "Desinfektera händerna, skyddshandskar på, avlägsna förbandet, inspektera att PVK är hel, tryck med kompress, fixera med tejp, handskar av, handhygien.",
+        "id": "avl-02-1",
+        "label": "Handhygien",
+        "icon": "1F6C5",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Det är Vårdhandbokens arbetsgång. Inspektera alltid att PVK är hel och oskadd när den avlägsnats."
+        "order": 1,
+        "feedback": "Rätt! Börja alltid med handhygien."
       },
       {
-        "id": "avl-02-b",
-        "label": "Dra ut PVK snabbt utan handsrar och kasta direkt utan kontroll.",
+        "id": "avl-02-2",
+        "label": "Skyddshandskar på",
+        "icon": "1FA7A",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 2,
+        "feedback": "Rätt! Skyddshandskar används vid avlägsnande."
+      },
+      {
+        "id": "avl-02-3",
+        "label": "Avlägsna förbandet",
+        "icon": "1F9F6",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 3,
+        "feedback": "Rätt! Förbandet avlägsnas försiktigt."
+      },
+      {
+        "id": "avl-02-4",
+        "label": "Dra ut PVK och kontrollera att den är hel",
+        "icon": "1F440",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 4,
+        "feedback": "Rätt! Kontrollera alltid att katetern är hel och oskadd."
+      },
+      {
+        "id": "avl-02-5",
+        "label": "Tryck med steril kompress på insticksstället",
+        "icon": "1FA79",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 5,
+        "feedback": "Rätt! Tryck med kompress för att stoppa blödning."
+      },
+      {
+        "id": "avl-02-6",
+        "label": "Fixera kompressen med tejp",
+        "icon": "1F9F6",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 6,
+        "feedback": "Rätt! Kompressen fixeras med tejp."
+      },
+      {
+        "id": "avl-02-7",
+        "label": "Handskar av och handhygien",
+        "icon": "1F6C5",
+        "isCorrect": true,
+        "isCritical": false,
+        "order": 7,
+        "feedback": "Rätt! Avsluta med handhygien."
+      },
+      {
+        "id": "avl-02-8",
+        "label": "Kasta PVK utan att kontrollera att den är hel",
+        "icon": "274C",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Skyddshandskar ska användas och PVK ska kontrolleras att den är hel – en avbiten kateter är en allvarlig komplikation."
+        "feedback": "Fel, allvarligt! PVK ska alltid kontrolleras – en avbiten kateter är en allvarlig komplikation."
       }
     ]
   },

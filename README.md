@@ -4,6 +4,8 @@ Ett utbildningsspel i WinUI 3 som lär sjuksköterskestudenter att lägga in en 
 
 Spelet är en stegvis simulering: du väljer ett patientfall och arbetar igenom hela proceduren – förberedelser, val av ven, inläggning, fixering och dokumentation, avlägsnande samt komplikationer (tromboflebit). Varje val ger omedelbar återkoppling med hänvisning till Vårdhandboken, och kritiska fel (t.ex. att palpera med skyddshandskar eller återföra en mandräng) markeras särskilt.
 
+Spelet innehåller interaktiva moment: du plockar material direkt i skåpet, väljer stickställe genom att klicka på platsen, utför desinfektionen och avlägsnandet i rätt ordning och väljer rätt fixeringsmaterial. Efter varje moment får du omedelbar återkoppling per valt föremål, och på resultatsidan får du en genomgång av exakt vad du behöver förbättra. Ikoner i spelet kommer från OpenMoji (CC BY-SA 4.0, se `IV-game.Presentation/Assets/Icons/OPENMOJI_LICENSE.txt`).
+
 ## Köra spelet
 
 ### Visual Studio
