@@ -24,7 +24,7 @@ namespace IV_game.Presentation
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
-    public partial class App : Application
+    public partial class App : Microsoft.UI.Xaml.Application
     {
         private Window? _window;
 

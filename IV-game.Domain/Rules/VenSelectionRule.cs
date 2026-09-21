@@ -21,7 +21,7 @@ public static class VenSelectionRule
     {
         return vens
             .Where(IsRecommended)
-            .OrderBy(VenSiteText.Priority)
+            .OrderBy(v => VenSiteText.Priority(v.Site))
             .ThenByDescending(v => v.IsPalpable)
             .FirstOrDefault();
     }
