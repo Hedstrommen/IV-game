@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "IV-game.Presentation (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "IV-game.Presentation (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
