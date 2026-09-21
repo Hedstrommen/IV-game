@@ -16,7 +16,7 @@
   <mp:PhoneIdentity PhoneProductId="0e0155e7-f257-40f4-8752-d882b1c2a2d3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>IV-game.Presentation</DisplayName>
+    <DisplayName>PVK-spelet</DisplayName>
     <PublisherDisplayName>loveh</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

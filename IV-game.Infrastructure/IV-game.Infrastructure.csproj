@@ -13,8 +13,4 @@
     <ProjectReference Include="..\IV-game.Domain\IV-game.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="Content\**\*.json" CopyToOutputDirectory="PreserveNewest" />
-  </ItemGroup>
-
 </Project>
