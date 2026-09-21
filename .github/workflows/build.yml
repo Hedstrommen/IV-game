@@ -14,16 +14,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET 8
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.0.x
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
 
       - name: Restore
-        run: dotnet restore IV-game.Presentation/IV-game.Presentation.csproj -p:Platform=x64
+        run: msbuild IV-game.sln /t:Restore /p:Configuration=Debug
 
       - name: Build
-        run: dotnet build IV-game.Presentation/IV-game.Presentation.csproj -c Debug -p:Platform=x64 --no-restore
+        run: msbuild IV-game.sln /p:Configuration=Debug /p:Platform=x64 /p:AppxPackage=false
 
       - name: Verify content files are copied to output
         shell: pwsh
