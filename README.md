@@ -6,12 +6,20 @@ Spelet är en stegvis simulering: du väljer ett patientfall och arbetar igenom 
 
 ## Köra spelet
 
+### Visual Studio
+
 1. Klona repot.
-2. Öppna `IV-game.Presentation.slnx` i Visual Studio 2022 med arbetsbelastningen **.NET Desktop Development** (inkluderar WinUI/Windows App SDK-stöd).
+2. Öppna `IV-game.sln` (eller `IV-game.Presentation.slnx`) i Visual Studio 2022 med arbetsbelastningen **.NET Desktop Development** (inkluderar WinUI/Windows App SDK-stöd).
 3. Vänta på att NuGet återställer paket (sker automatiskt vid första bygget).
 4. Tryck F5 (Start) med `x64` som plattform.
 
-Inga andra nedladdningar behövs – Windows App SDK och övriga paket hämtas av NuGet vid det första bygget.
+### Visual Studio Code
+
+1. Klona repot och öppna mappen i VS Code.
+2. Installera de rekommenderade tilläggen (får du förslag på automatiskt): **C#** och **C# Dev Kit**.
+3. Tryck F5 – bygguppgiften `build` kompilerar lösningen och startar spelet.
+
+Krav i båda fallen: .NET 8 SDK och Windows App SDK (hämtas automatiskt av NuGet vid det första bygget). Inga andra nedladdningar behövs.
 
 ## Arkitektur (DDD)
 

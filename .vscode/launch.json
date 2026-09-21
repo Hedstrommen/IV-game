@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PVK-spelet (WinUI)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/IV-game.Presentation/bin/x64/Debug/net8.0-windows10.0.19041.0/IV-game.Presentation.exe",
+      "cwd": "${workspaceFolder}/IV-game.Presentation",
+      "console": "internalConsole"
+    }
+  ]
+}
