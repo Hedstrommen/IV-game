@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="IV_game.Presentation.Views.GameView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid RowSpacing="16" MaxWidth="900">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" ColumnSpacing="16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="ProgressText"
+                       Grid.Column="0"
+                       VerticalAlignment="Center" />
+
+            <TextBlock x:Name="ScoreText"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       FontWeight="SemiBold" />
+        </Grid>
+
+        <ProgressBar x:Name="StepProgress" Grid.Row="1" />
+
+        <Border Grid.Row="2"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="16">
+            <StackPanel Spacing="8">
+                <TextBlock x:Name="PhaseText"
+                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                <TextBlock x:Name="TitleText"
+                           FontSize="22"
+                           FontWeight="SemiBold"
+                           TextWrapping="Wrap" />
+                <TextBlock x:Name="PromptText"
+                           FontSize="16"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+        </Border>
+
+        <StackPanel x:Name="ActionsPanel" Grid.Row="3" Spacing="8" />
+
+        <Border x:Name="FeedbackBorder"
+                Grid.Row="4"
+                Visibility="Collapsed"
+                CornerRadius="8"
+                Padding="16">
+            <StackPanel Spacing="8">
+                <TextBlock x:Name="FeedbackTitle" FontWeight="SemiBold" FontSize="16" />
+                <TextBlock x:Name="FeedbackText" TextWrapping="Wrap" />
+                <TextBlock x:Name="SourceText"
+                           FontSize="12"
+                           Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                           TextWrapping="Wrap" />
+                <Button x:Name="NextButton"
+                        Content="Nästa"
+                        Style="{ThemeResource AccentButtonStyle}"
+                        Click="OnNextClick" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
