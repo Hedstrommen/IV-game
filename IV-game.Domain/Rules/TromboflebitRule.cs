@@ -1,5 +1,3 @@
-using IV_game.Domain.PatientCases;
-
 namespace IV_game.Domain.Rules;
 
 public enum TromboflebitGrade
