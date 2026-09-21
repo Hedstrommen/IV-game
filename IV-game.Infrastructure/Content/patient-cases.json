@@ -1,0 +1,137 @@
+[
+  {
+    "id": "case-anna",
+    "patientName": "Anna, 34 år",
+    "age": 34,
+    "presentation": "Anna är inlagd för observation efter en trafikolycka. Hon är lugn men lite orolig över stick. Venstatus är god i båda underarmarna.",
+    "riskFlags": [ "Stickradda" ],
+    "vens": [
+      {
+        "site": "Underarm",
+        "side": "Vanster",
+        "description": "Rak, väl palpabel ven på vänster underarm",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      },
+      {
+        "site": "Handrygg",
+        "side": "Vanster",
+        "description": "Palpabel men slingrig ven på vänster handrygg",
+        "isPalpable": true,
+        "isStraight": false,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      },
+      {
+        "site": "Underarm",
+        "side": "Hoger",
+        "description": "Rak, väl palpabel ven på höger underarm",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      }
+    ]
+  },
+  {
+    "id": "case-bengt",
+    "patientName": "Bengt, 67 år",
+    "age": 67,
+    "presentation": "Bengt har dialysfistel på vänster arm och behöver en PVK för antibiotika. Han har även haft en trombos i höger underarm för två år sedan. Höger handrygg har en fin, rak ven.",
+    "riskFlags": [ "DialysfistelVansterArm", "TidigareTrombosHogerArm" ],
+    "vens": [
+      {
+        "site": "Underarm",
+        "side": "Vanster",
+        "description": "Vänster underarm – dialysfistel",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": true,
+        "isAvailable": true
+      },
+      {
+        "site": "Underarm",
+        "side": "Hoger",
+        "description": "Höger underarm – tidigare trombos",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": false
+      },
+      {
+        "site": "Handrygg",
+        "side": "Hoger",
+        "description": "Rak, väl palpabel ven på höger handrygg",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      },
+      {
+        "site": "Armveck",
+        "side": "Hoger",
+        "description": "Palpabel ven i höger armveck",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": true,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      }
+    ]
+  },
+  {
+    "id": "case-clara",
+    "patientName": "Clara, 8 år",
+    "age": 8,
+    "presentation": "Clara är ett barn med stickrädsla som behöver vätska. Hon är dehydrerad och kären är svåra att hitta på vanligt sätt.",
+    "riskFlags": [ "Stickradda", "Dehydrering" ],
+    "vens": [
+      {
+        "site": "Underarm",
+        "side": "Vanster",
+        "description": "Svagt palpabel ven på vänster underarm",
+        "isPalpable": false,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      },
+      {
+        "site": "Handrygg",
+        "side": "Hoger",
+        "description": "Rak, väl palpabel ven på höger handrygg",
+        "isPalpable": true,
+        "isStraight": true,
+        "isOverJoint": false,
+        "isHardOrIrritated": false,
+        "skinInflamedOrDamaged": false,
+        "isExcludedArm": false,
+        "isAvailable": true
+      }
+    ]
+  }
+]

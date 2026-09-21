@@ -1,0 +1,516 @@
+[
+  {
+    "id": "prep-01",
+    "phase": "Forberedelser",
+    "orderIndex": 1,
+    "title": "Miljön",
+    "prompt": "Du ska lägga in en PVK på Anna. Varför är det viktigt med en lugn miljö, bra ljus och en god arbetsställning?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Inför inläggning, Miljö",
+    "actions": [
+      {
+        "id": "prep-01-a",
+        "label": "De yttre förutsättningarna påverkar hur inläggningen lyckas. En lugn miljö med bra ljus och god arbetsställning underlättar.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Yttre förutsättningar som lugn, ljus och arbetsställning påverkar resultatet av inläggningen."
+      },
+      {
+        "id": "prep-01-b",
+        "label": "Det spelar ingen roll, det viktiga är att gå snabbt.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Stress och dåligt ljus ökar risken för misslyckad inläggning och komplikationer."
+      }
+    ]
+  },
+  {
+    "id": "prep-02",
+    "phase": "Forberedelser",
+    "orderIndex": 2,
+    "title": "Identitetskontroll och anamnes",
+    "prompt": "Vad ska du göra innan du väljer ven?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Identitetskontroll och anamnes",
+    "actions": [
+      {
+        "id": "prep-02-a",
+        "label": "Informera dig om patientens identitet, aktuella sjukdomshistoria och om det tidigare varit svårigheter vid PVK-inläggning.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Identitetskontroll och anamnes är grundläggande. Ta även hjälp av patienten vid val av ven."
+      },
+      {
+        "id": "prep-02-b",
+        "label": "Det räcker att titta på armarna direkt.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Utan identitetskontroll och anamnes kan du missa viktiga risker och kontraindikationer."
+      }
+    ]
+  },
+  {
+    "id": "prep-03",
+    "phase": "Forberedelser",
+    "orderIndex": 3,
+    "title": "Hygien",
+    "prompt": "Vilken arbetsgång gäller för hygienen?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Förberedelser, basala hygienrutiner",
+    "actions": [
+      {
+        "id": "prep-03-a",
+        "label": "Basala hygienrutiner och aseptiskt arbetssätt ska alltid tillämpas. Desinfektera händerna, desinfektera underlaget och duka upp materialet på en ren yta.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Aseptiskt arbetssätt och basala hygienrutiner gäller vid allt handhavande av PVK."
+      },
+      {
+        "id": "prep-03-b",
+        "label": "Handhygien behövs bara efteråt.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Bristande hygien är en kritisk patientsäkerhetsbrist och kan ge kateterrelaterad infektion."
+      }
+    ]
+  },
+  {
+    "id": "prep-04",
+    "phase": "Forberedelser",
+    "orderIndex": 4,
+    "title": "Material och smärtlindring",
+    "prompt": "Hur förbereder du materialet, och vad erbjuder du Anna som har stickrädsla?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Förberedelser",
+    "actions": [
+      {
+        "id": "prep-04-a",
+        "label": "All utrustning inom räckhåll, spola igenom eventuell förlängningsslang med Natriumklorid 9 mg/ml, och erbjud smärtlindring med bedövningskräm eller bedövningsplåster.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Förbered allt material och erbjud smärtlindring till barn och patienter med stickrädsla."
+      },
+      {
+        "id": "prep-04-b",
+        "label": "Låt sängen ligga tills efter sticket, och avstå smärtlindring.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Allt material ska förberedas inom räckhåll, och patienter med stickrädsla ska erbjudas smärtlindring."
+      }
+    ]
+  },
+  {
+    "id": "ven-01",
+    "phase": "ValAvVen",
+    "orderIndex": 5,
+    "title": "Val av ven – Anna",
+    "prompt": "Du har palperat och utvärderat Annas venstatus. Vilken prioriteringsordning gäller vid val av ven?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Val av ven och punktionsställe",
+    "actions": [
+      {
+        "id": "ven-01-a",
+        "label": "1. Underarm (ej armveck), 2. Handrygg, 3. Armveck, 4. Överarm, 5. Nedre extremitet.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Det är Vårdhandbokens prioriteringsordning. Välj raka vener med stor diameter på underarmen."
+      },
+      {
+        "id": "ven-01-b",
+        "label": "1. Armveck, 2. Överarm, 3. Underarm, 4. Handrygg.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vener över leder, även armveck, ska undvikas när det är möjligt."
+      }
+    ]
+  },
+  {
+    "id": "ven-02",
+    "phase": "ValAvVen",
+    "orderIndex": 6,
+    "title": "Val av ven – Bengt",
+    "prompt": "Bengt har dialysfistel på vänster arm och tidigare trombos i höger underarm. Vilken ven väljer du?",
+    "kind": "SiteSelection",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Undvik arm med dialysfistel eller tidigare trombos",
+    "actions": [
+      {
+        "id": "ven-02-a",
+        "label": "Vänster underarm – dialysfistel",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Aldrig sticka i arm med dialysfistel. Det kan förstöra fisteln, vilket är patientens livlina för dialys."
+      },
+      {
+        "id": "ven-02-b",
+        "label": "Höger underarm – tidigare trombos",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Extremitet där patienten tidigare haft trombos ska undvikas."
+      },
+      {
+        "id": "ven-02-c",
+        "label": "Höger handrygg – rak, väl palpabel ven",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Höger handrygg är bästa valet: vänster arm är utesluten (dialysfistel) och höger underarm har tidigare trombos. Handrygg är prioritetsordning nummer 2."
+      },
+      {
+        "id": "ven-02-d",
+        "label": "Höger armveck – palpabel ven",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vener över leder, även armveck, ska undvikas när det är möjligt. Höger handrygg är ett bättre val."
+      }
+    ]
+  },
+  {
+    "id": "ven-03",
+    "phase": "ValAvVen",
+    "orderIndex": 7,
+    "title": "Stas",
+    "prompt": "Vilket stastryck ger störst vendiameter hos en vuxen patient?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Stas, blodtrycksmanschett",
+    "actions": [
+      {
+        "id": "ven-03-a",
+        "label": "Mellan 60–80 mmHg under minst 30 sekunder, men aldrig över systoliskt blodtryck.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Störst vendiameter fås med stastryck 60–80 mmHg och stastid minst 30 sekunder. Stastrycket ska inte understiga 40 mmHg."
+      },
+      {
+        "id": "ven-03-b",
+        "label": "Så hårt som möjligt, så länge som möjligt.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Stas ska inte överstiga systoliskt blodtryck och inte vara på för länge. Släpp och stasa igen vid behov."
+      }
+    ]
+  },
+  {
+    "id": "inl-01",
+    "phase": "Inlaggning",
+    "orderIndex": 8,
+    "title": "Skyddshandskar",
+    "prompt": "Du ska börja inläggningen. Vad gäller för skyddshandskarna?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Tillvägagångssätt vid inläggning",
+    "actions": [
+      {
+        "id": "inl-01-a",
+        "label": "Skyddshandskar används, men de är inte sterila – jag vidrör inte insticksstället med dem.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Skyddshandskar är inte sterila och får inte röra insticksstället. Behov av palpering kräver sterila handskar."
+      },
+      {
+        "id": "inl-01-b",
+        "label": "Skyddshandskar är sterila och jag kan palpera insticksstället fritt.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Skyddshandskar är inte sterila. Att röra det desinfekterade insticksstället med dem riskerar smittspridning."
+      }
+    ]
+  },
+  {
+    "id": "inl-02",
+    "phase": "Inlaggning",
+    "orderIndex": 9,
+    "title": "Desinfektion",
+    "prompt": "Hur desinficerar du hudområdet?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Desinfektion med klorhexidinsprit",
+    "actions": [
+      {
+        "id": "inl-02-a",
+        "label": "Klorhexidinsprit, genomblöt kompress, minst 5 sekunder, huden fuktig i minst 30 sekunder, låt lufttorka.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Klorhexidinglukonat 5 mg/mL + etanol 70 % (eller motsvarande), ordentligt genomblöt kompress i minst 5 s, fuktig i minst 30 s, lufttorka. Berör sedan inte insticksstället."
+      },
+      {
+        "id": "inl-02-b",
+        "label": "Snabbt svep med sprit, stick direkt.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Otillräcklig desinfektion ger risk för kateterrelaterad infektion. Huden ska lufttorka efter desinfektion."
+      }
+    ]
+  },
+  {
+    "id": "inl-03",
+    "phase": "Inlaggning",
+    "orderIndex": 10,
+    "title": "Instick och mandräng",
+    "prompt": "Du har prickat venen och får blodåtergång. Vad gör du med mandrängen?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Mandräng får aldrig återföras",
+    "actions": [
+      {
+        "id": "inl-03-a",
+        "label": "Mandrängen dras ut och läggs direkt i avsedd avfallsbehållare. Den återförs aldrig in i PVK.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! En utdragen mandräng får aldrig återföras in i PVK eftersom katetern då kan skadas. Mandrängen läggs direkt i avfallsbehållaren."
+      },
+      {
+        "id": "inl-03-b",
+        "label": "Mandrängen kan återföras försiktigt om det behövs ett nytt försök.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! En utdragen mandräng får ALDRIG återföras – risken är att katetern skadas (avklipps av mandrängen)."
+      }
+    ]
+  },
+  {
+    "id": "inl-04",
+    "phase": "Inlaggning",
+    "orderIndex": 11,
+    "title": "Stasen",
+    "prompt": "När släpper du stasen?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Släpp stasen när PVK är i kärlet",
+    "actions": [
+      {
+        "id": "inl-04-a",
+        "label": "När PVK är i kärlet.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Stasen släpps när PVK är i kärlet, inte tidigare och inte för sent."
+      },
+      {
+        "id": "inl-04-b",
+        "label": "Efter att jag har färdigfixerat förbandet.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Stasen ska släppas när PVK är i kärlet – annars ökar risken för blödning och hematom."
+      }
+    ]
+  },
+  {
+    "id": "inl-05",
+    "phase": "Inlaggning",
+    "orderIndex": 12,
+    "title": "Kontroll av läge",
+    "prompt": "Hur kontrollerar du att PVK ligger rätt?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Spolning med Natriumklorid",
+    "actions": [
+      {
+        "id": "inl-05-a",
+        "label": "Spolning med Natriumklorid 9 mg/mL från endosbehållare eller förfylld spruta (10 mL för vuxna).",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Läget kontrolleras med spolning av NaCl 9 mg/mL (10 mL vuxna, anpassad mängd för barn). Endosbehållare eller förfylld spruta av smittskyddsskäl."
+      },
+      {
+        "id": "inl-05-b",
+        "label": "Det syns på att det kommer blod, mer kontroll behövs inte.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Läget kontrolleras alltid med spolning – blodåtergång är ingen fullständig kontroll av funktionen."
+      }
+    ]
+  },
+  {
+    "id": "fix-01",
+    "phase": "FixeringOchDokumentation",
+    "orderIndex": 13,
+    "title": "Fixering av PVK",
+    "prompt": "Hur fixerar du PVK?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Fixering, högpermeabelt polyuretanförband",
+    "actions": [
+      {
+        "id": "fix-01-a",
+        "label": "Med högpermeabelt polyuretanförband så att insticksstället kan inspekteras genom förbandet och läget inte rubbas.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! PVK fixeras noggrant med högpermeabelt polyuretanförband så att insticksstället kan inspekteras och läget inte rubbas."
+      },
+      {
+        "id": "fix-01-b",
+        "label": "Med vanlig tejp direkt över insticksstället.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vanlig tejp ger inte möjlighet att inspektera insticksstället och fixerar sämre."
+      }
+    ]
+  },
+  {
+    "id": "fix-02",
+    "phase": "FixeringOchDokumentation",
+    "orderIndex": 14,
+    "title": "Märkning",
+    "prompt": "Vad skriver du på förbandet/etiketten?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Märk med datum, klockslag och signatur",
+    "actions": [
+      {
+        "id": "fix-02-a",
+        "label": "Datum, klockslag och signatur – på avsedd etikett, inte direkt på förbandet.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Märk med datum, klockslag och signatur. Använd avsedd etikett på förlängningsslang – skriv aldrig direkt på förbandet eftersom plasten då kan skadas."
+      },
+      {
+        "id": "fix-02-b",
+        "label": "Bara datum, det räcker.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Både datum, klockslag och signatur krävs för spårbarhet och att kunna följa upp bytestid."
+      }
+    ]
+  },
+  {
+    "id": "fix-03",
+    "phase": "FixeringOchDokumentation",
+    "orderIndex": 15,
+    "title": "Yttre förband och dokumentation",
+    "prompt": "Vad är syftet med det yttre förbandet, och vad dokumenterar du i journalen?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Yttre förband och dokumentation",
+    "actions": [
+      {
+        "id": "fix-03-a",
+        "label": "Yttre förband fixerar slangar så att PVK inte rubbas och minskar risken för tromboflebit. Jag dokumenterar tidpunkt, storlek och placering.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Yttre förband skyddar mot att PVK rubbas och minskar mekanisk retning. Journalen ska innehålla tidpunkt för inläggning samt storlek och placering av PVK."
+      },
+      {
+        "id": "fix-03-b",
+        "label": "Yttre förband behövs inte, och journalen klarar sig utan detaljer.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Lös hängande slang ökar risken för tromboflebit och utdragning. Dokumentation är lagstadgad."
+      }
+    ]
+  },
+  {
+    "id": "avl-01",
+    "phase": "Avlagsnande",
+    "orderIndex": 16,
+    "title": "När avlägsnas PVK?",
+    "prompt": "När ska en PVK avlägsnas?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Avlägsnande av PVK",
+    "actions": [
+      {
+        "id": "avl-01-a",
+        "label": "När den inte längre används, eller direkt efter avslutad behandling. Utvärdera behovet dagligen.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! PVK ska avlägsnas när den inte längre används. PVK ska ligga inne kortast möjliga tid. Behovet utvärderas dagligen."
+      },
+      {
+        "id": "avl-01-b",
+        "label": "Först när den är defekt eller efter en vecka.",
+        "isCritical": false,
+        "isCorrect": false,
+        "feedback": "Fel. Vänta inte på komplikationer – utvärdera dagligen och avlägsna när den inte längre behövs."
+      }
+    ]
+  },
+  {
+    "id": "avl-02",
+    "phase": "Avlagsnande",
+    "orderIndex": 17,
+    "title": "Tillvägagångssätt vid avlägsnande",
+    "prompt": "Vilken arbetsgång är korrekt vid avlägsnande av PVK?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Tillvägagångssätt vid avlägsnande",
+    "actions": [
+      {
+        "id": "avl-02-a",
+        "label": "Desinfektera händerna, skyddshandskar på, avlägsna förbandet, inspektera att PVK är hel, tryck med kompress, fixera med tejp, handskar av, handhygien.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Det är Vårdhandbokens arbetsgång. Inspektera alltid att PVK är hel och oskadd när den avlägsnats."
+      },
+      {
+        "id": "avl-02-b",
+        "label": "Dra ut PVK snabbt utan handsrar och kasta direkt utan kontroll.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Skyddshandskar ska användas och PVK ska kontrolleras att den är hel – en avbiten kateter är en allvarlig komplikation."
+      }
+    ]
+  },
+  {
+    "id": "komp-01",
+    "phase": "Komplikationer",
+    "orderIndex": 18,
+    "title": "Tromboflebit – symtom",
+    "prompt": "Vilka symtom kännetecknar tromboflebit?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Komplikationer, tromboflebit",
+    "actions": [
+      {
+        "id": "komp-01-a",
+        "label": "Rodnad, ömhet, svullnad, smärta och palpabel hårdhet över venen.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Tromboflebit kännetecknas av rodnad, ömhet, svullnad, smärta och palpabel hårdhet över venen. Frekvensen anges ofta mellan <1 och 40 %."
+      },
+      {
+        "id": "komp-01-b",
+        "label": "Endast feber, inga lokala symtom.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Tromboflebit ger framför allt lokala symtom från venen och insticksstället."
+      }
+    ]
+  },
+  {
+    "id": "komp-02",
+    "phase": "Komplikationer",
+    "orderIndex": 19,
+    "title": "Tromboflebit – åtgärd",
+    "prompt": "Du hittar rodnad, svullnad, smärta och palpabel hårdhet över venen hos en patient med PVK. Vad gör du?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Komplikationer, åtgärd",
+    "actions": [
+      {
+        "id": "komp-02-a",
+        "label": "Avlägsna PVK, kontakta ansvarig läkare och dokumentera vidtagna åtgärder.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Vid konstaterad tromboflebit avlägsnas PVK, ansvarig läkare kontaktas och åtgärderna dokumenteras."
+      },
+      {
+        "id": "komp-02-b",
+        "label": "Spola hårdare så att kärlet öppnar sig igen.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Att spola mot en tromboflebit kan lossna en tromb och är patientsäkerhetsmässigt förbjudet. PVK ska avlägsnas och läkare kontaktas."
+      }
+    ]
+  },
+  {
+    "id": "komp-03",
+    "phase": "Komplikationer",
+    "orderIndex": 20,
+    "title": "Byte av PVK",
+    "prompt": "Hur ofta rekommenderas byte av PVK hos vuxna?",
+    "kind": "MultipleChoice",
+    "sourceReference": "Vårdhandboken – Perifer venkateter: Byte av PVK",
+    "actions": [
+      {
+        "id": "komp-03-a",
+        "label": "Var 72:a timme (var tredje dag) hos vuxna.",
+        "isCorrect": true,
+        "isCritical": false,
+        "feedback": "Rätt! Byte rekommenderas var 72:a timme hos vuxna. Hos barn och svårstuckna patienter kan frekvensen förlängas vid extra noggrann inspektion minst var 8:e timme."
+      },
+      {
+        "id": "komp-03-b",
+        "label": "En gång i veckan eller när den slutar fungera.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vuxna: byte var 72:a timme. Vänta inte på att komplikationer ska uppstå."
+      }
+    ]
+  }
+]
