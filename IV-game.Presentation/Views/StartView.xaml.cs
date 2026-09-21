@@ -88,6 +88,11 @@ public sealed partial class StartView : UserControl
 
     private async void ShowError(string message, Exception ex)
     {
+        if (XamlRoot is null)
+        {
+            return;
+        }
+
         ContentDialog dialog = new()
         {
             Title = "Fel",
