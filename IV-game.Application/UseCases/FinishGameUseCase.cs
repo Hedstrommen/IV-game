@@ -58,6 +58,12 @@ public sealed class FinishGameUseCase
     {
         return _scoreRepository.GetTop(count);
     }
+
+    public IReadOnlyList<StepReview> GetStepReviews(GameSession session)
+    {
+        ArgumentNullException.ThrowIfNull(session);
+        return session.Reviews;
+    }
 }
 
 public sealed class GameResult

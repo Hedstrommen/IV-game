@@ -12,6 +12,8 @@ public sealed class AppServices
 
     public SubmitAnswerUseCase SubmitAnswer { get; }
 
+    public SubmitSelectionUseCase SubmitSelection { get; }
+
     public FinishGameUseCase FinishGame { get; }
 
     private AppServices()
@@ -22,6 +24,7 @@ public sealed class AppServices
 
         StartGame = new StartGameUseCase(patientCaseRepository, procedureStepRepository);
         SubmitAnswer = new SubmitAnswerUseCase();
+        SubmitSelection = new SubmitSelectionUseCase();
         FinishGame = new FinishGameUseCase(scoreRepository);
     }
 }

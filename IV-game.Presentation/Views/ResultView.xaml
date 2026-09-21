@@ -6,27 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid RowSpacing="16" MaxWidth="700" VerticalAlignment="Center">
+    <Grid RowSpacing="16" MaxWidth="900">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
         <TextBlock x:Name="ResultHeading"
                    Grid.Row="0"
                    FontSize="28"
                    FontWeight="SemiBold"
                    TextWrapping="Wrap" />
-
         <TextBlock x:Name="ResultGrade"
                    Grid.Row="1"
                    FontSize="18"
                    TextWrapping="Wrap" />
-
         <Grid Grid.Row="2" ColumnSpacing="24">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -34,7 +31,6 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-
             <StackPanel Grid.Column="0" Spacing="2">
                 <TextBlock Text="Poäng" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
                 <TextBlock x:Name="ScoreValue" FontSize="24" FontWeight="SemiBold" />
@@ -52,10 +48,22 @@
                 <TextBlock x:Name="PercentValue" FontSize="24" FontWeight="SemiBold" />
             </StackPanel>
         </Grid>
-
         <ProgressBar x:Name="ResultProgress" Grid.Row="3" />
-
-        <StackPanel Grid.Row="4" Orientation="Horizontal" Spacing="12">
+        <Grid Grid.Row="4" RowSpacing="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="ReviewHeaderText"
+                       Grid.Row="0"
+                       FontSize="18"
+                       FontWeight="SemiBold"
+                       TextWrapping="Wrap" />
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="ReviewList" Spacing="12" />
+            </ScrollViewer>
+        </Grid>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Spacing="12">
             <Button Content="Öva igen (nytt patientfall)"
                     Style="{ThemeResource AccentButtonStyle}"
                     Click="OnRestartClick" />

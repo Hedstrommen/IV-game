@@ -11,4 +11,6 @@ public sealed class StepAction
     public bool IsCritical { get; init; }
 
     public string Feedback { get; init; } = string.Empty;
+    public string Icon { get; init; } = string.Empty;
+    public int Order { get; init; }
 }

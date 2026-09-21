@@ -34,6 +34,10 @@ public class GameSession
 
     public int CriticalFailures { get; private set; }
 
+    public IReadOnlyList<StepReview> Reviews => _reviews;
+
+    private readonly List<StepReview> _reviews = new();
+
     public ProcedureOutcome SubmitAnswer(string actionId)
     {
         ProcedureStep? step = CurrentStep;
@@ -58,6 +62,57 @@ public class GameSession
         {
             CriticalFailures++;
         }
+
+        _reviews.Add(new StepReview(
+            step,
+            action.Label,
+            outcome.IsCorrect,
+            outcome.IsCriticalFailure,
+            outcome.Feedback,
+            outcome.SourceReference));
+
+        _currentIndex++;
+
+        return outcome;
+    }
+
+    public SelectionOutcome SubmitSelection(IReadOnlyList<string> chosenActionIds)
+    {
+        ProcedureStep? step = CurrentStep;
+        if (step is null)
+        {
+            throw new InvalidOperationException("Spelet är slutfört, det finns inget aktivt steg.");
+        }
+
+        SelectionOutcome outcome = step.Kind switch
+        {
+            StepKind.OrderSelection => SelectionScoreRule.EvaluateOrder(step, chosenActionIds),
+            _ => SelectionScoreRule.Evaluate(step, chosenActionIds)
+        };
+
+        _score += outcome.PointsAwarded;
+
+        if (outcome.IsCorrect)
+        {
+            CorrectCount++;
+        }
+
+        if (outcome.IsCriticalFailure)
+        {
+            CriticalFailures++;
+        }
+
+        string chosenSummary = string.Join(", ", step.Actions
+            .Where(a => chosenActionIds.Contains(a.Id))
+            .Select(a => a.Label));
+
+        _reviews.Add(new StepReview(
+            step,
+            chosenSummary,
+            outcome.IsCorrect,
+            outcome.IsCriticalFailure,
+            outcome.BuildFeedback(),
+            outcome.SourceReference));
 
         _currentIndex++;
 
