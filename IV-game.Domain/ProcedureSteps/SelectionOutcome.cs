@@ -1,4 +1,6 @@
-using System.Text;\n\nnamespace IV_game.Domain.ProcedureSteps;
+using System.Text;
+
+namespace IV_game.Domain.ProcedureSteps;
 
 public sealed class SelectionItemResult
 {
