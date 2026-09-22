@@ -212,12 +212,14 @@ public sealed partial class GameView : UserControl
         };
         panel.Children.Add(label);
 
-        return new Button
+        Button button = new()
         {
             Content = panel,
             HorizontalAlignment = HorizontalAlignment.Stretch,
             Tag = action.Id
         };
+        button.Click += OnActionClick;
+        return button;
     }
 
     private void OnActionClick(object sender, RoutedEventArgs e)
@@ -256,7 +258,7 @@ public sealed partial class GameView : UserControl
             }
             RefreshBasket();
             ConfirmSelectionButton.IsEnabled = _pickedItemIds.Count > 0;
-            SetActionStates(enabled: true);
+            UpdatePickHighlights();
             return;
         }
 
@@ -265,6 +267,23 @@ public sealed partial class GameView : UserControl
             _pickedItemIds.Add(actionId);
             RefreshBasket();
             ConfirmSelectionButton.IsEnabled = _pickedItemIds.Count > 0;
+            UpdatePickHighlights();
+        }
+    }
+
+    private void UpdatePickHighlights()
+    {
+        foreach (UIElement child in SceneItemsPanel.Children)
+        {
+            if (child is not Button { Tag: string id } button)
+            {
+                continue;
+            }
+            bool picked = _pickedItemIds.Contains(id);
+            button.Background = picked
+                ? new SolidColorBrush(Color.FromArgb(255, 0, 120, 212))
+                : null;
+            button.BorderThickness = picked ? new Thickness(3) : new Thickness(1);
         }
     }
 
@@ -273,6 +292,7 @@ public sealed partial class GameView : UserControl
         _pickedItemIds.Clear();
         RefreshBasket();
         ConfirmSelectionButton.IsEnabled = false;
+        UpdatePickHighlights();
     }
 
     private void RefreshBasket()
@@ -397,6 +417,11 @@ public sealed partial class GameView : UserControl
             Color.FromArgb(255, 70, 40, 25));
         FeedbackBorder.Visibility = Visibility.Visible;
         NextButton.Content = _session.IsFinished ? "Visa resultat" : "Nästa";
+    }
+
+    private void OnExitClick(object sender, RoutedEventArgs e)
+    {
+        _owner.ShowStartView();
     }
 
     private void OnNextClick(object sender, RoutedEventArgs e)

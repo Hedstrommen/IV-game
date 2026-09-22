@@ -10,17 +10,31 @@
     "actions": [
       {
         "id": "prep-01-a",
-        "label": "De yttre förutsättningarna påverkar hur inläggningen lyckas. En lugn miljö med bra ljus och god arbetsställning underlättar.",
+        "label": "En lugn miljö med bra ljus och god arbetsställning – det påverkar hur inläggningen lyckas.",
         "isCorrect": true,
         "isCritical": false,
         "feedback": "Rätt! Yttre förutsättningar som lugn, ljus och arbetsställning påverkar resultatet av inläggningen."
       },
       {
         "id": "prep-01-b",
-        "label": "Det spelar ingen roll, det viktiga är att gå snabbt.",
+        "label": "En lugn miljö är bra men ljuset spelar mindre roll – venen syns ändå.",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Stress och dåligt ljus ökar risken för misslyckad inläggning och komplikationer."
+        "feedback": "Fel. Bra ljus är avgörande för att se och palpera venenkorrekt. Dåligt ljus ökar risken för misslyckad inläggning."
+      },
+      {
+        "id": "prep-01-c",
+        "label": "Arbetsställningen spelar ingen roll – det viktiga är att gå snabbt.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. En god arbetsställning ger bättre precision och färre misslyckade stick."
+      },
+      {
+        "id": "prep-01-d",
+        "label": "Miljön spelar roll bara vid barn – vuxna klarar sig i vilken miljö som helst.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Yttre förutsättningar påverkar inläggningen hos alla patienter."
       }
     ]
   },
@@ -35,14 +49,28 @@
     "actions": [
       {
         "id": "prep-02-a",
-        "label": "Informera dig om patientens identitet, aktuella sjukdomshistoria och om det tidigare varit svårigheter vid PVK-inläggning.",
+        "label": "Identitetskontroll, aktuell sjukdomshistoria och fråga om tidigare svårigheter vid PVK-inläggning.",
         "isCorrect": true,
         "isCritical": false,
         "feedback": "Rätt! Identitetskontroll och anamnes är grundläggande. Ta även hjälp av patienten vid val av ven."
       },
       {
         "id": "prep-02-b",
-        "label": "Det räcker att titta på armarna direkt.",
+        "label": "Identitetskontroll räcker – sjukdomshistorian finns redan i journalen.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Journalen kan vara inaktuell – fråga alltid om aktuell anamnes och tidigare svårigheter."
+      },
+      {
+        "id": "prep-02-c",
+        "label": "Anamnes behövs bara om patienten ser blek ut.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Anamnes ska alltid tas – utseende säger inget om tidigare svårigheter vid stick."
+      },
+      {
+        "id": "prep-02-d",
+        "label": "Titta direkt på armarna – det går snabbare än att fråga.",
         "isCorrect": false,
         "isCritical": false,
         "feedback": "Fel. Utan identitetskontroll och anamnes kan du missa viktiga risker och kontraindikationer."
@@ -60,17 +88,31 @@
     "actions": [
       {
         "id": "prep-03-a",
-        "label": "Basala hygienrutiner och aseptiskt arbetssätt ska alltid tillämpas. Desinfektera händerna, desinfektera underlaget och duka upp materialet på en ren yta.",
+        "label": "Basala hygienrutiner och aseptiskt arbetssätt alltid: handhygien, desinfektera underlaget, dukat material på ren yta.",
         "isCorrect": true,
         "isCritical": false,
         "feedback": "Rätt! Aseptiskt arbetssätt och basala hygienrutiner gäller vid allt handhavande av PVK."
       },
       {
         "id": "prep-03-b",
-        "label": "Handhygien behövs bara efteråt.",
+        "label": "Handhygiene före och handhygien efter – underlaget behöver inte desinfekteras.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Underlaget ska desinfekteras innan materialet dukas upp."
+      },
+      {
+        "id": "prep-03-c",
+        "label": "Handhygien behövs bara efteråt eftersom man använder skyddshandskar.",
         "isCorrect": false,
         "isCritical": true,
         "feedback": "Fel, allvarligt! Bristande hygien är en kritisk patientsäkerhetsbrist och kan ge kateterrelaterad infektion."
+      },
+      {
+        "id": "prep-03-d",
+        "label": "Aseptiskt arbetssätt gäller bara på operationsavdelningar.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Basala hygienrutiner och aseptik gäller överallt där PVK läggs in."
       }
     ]
   },
@@ -299,17 +341,31 @@
     "actions": [
       {
         "id": "ven-03-a",
-        "label": "Mellan 60–80 mmHg under minst 30 sekunder, men aldrig över systoliskt blodtryck.",
+        "label": "60–80 mmHg i minst 30 sekunder, aldrig över systoliskt blodtryck.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Störst vendiameter fås med stastryck 60–80 mmHg och stastid minst 30 sekunder. Stastrycket ska inte understiga 40 mmHg."
+        "feedback": "Rätt! Störst vendiameter fås med stastryck 60–80 mmHg och stastid minst 30 sekunder."
       },
       {
         "id": "ven-03-b",
-        "label": "Så hårt som möjligt, så länge som möjligt.",
+        "label": "60–80 mmHg men bara 10 sekunder – tiden spelar ingen roll.",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Stas ska inte överstiga systoliskt blodtryck och inte vara på för länge. Släpp och stasa igen vid behov."
+        "feedback": "Fel. Stastiden ska vara minst 30 sekunder för störst vendiameter."
+      },
+      {
+        "id": "ven-03-c",
+        "label": "40 mmHg i 60 sekunder.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Stastrycket ska inte understiga 40 mmHg och optimalt tryck är 60–80 mmHg."
+      },
+      {
+        "id": "ven-03-d",
+        "label": "Så hårt som möjligt så länge som möjligt – det ger bredast ven.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Stas ska inte överstiga systoliskt blodtryck eller vara på för länge."
       }
     ]
   },
@@ -324,17 +380,31 @@
     "actions": [
       {
         "id": "inl-01-a",
-        "label": "Skyddshandskar används, men de är inte sterila – jag vidrör inte insticksstället med dem.",
+        "label": "Skyddshandskar (ej sterila) – jag vidrör inte insticksstället med dem.",
         "isCorrect": true,
         "isCritical": false,
         "feedback": "Rätt! Skyddshandskar är inte sterila och får inte röra insticksstället. Behov av palpering kräver sterila handskar."
       },
       {
         "id": "inl-01-b",
-        "label": "Skyddshandskar är sterila och jag kan palpera insticksstället fritt.",
+        "label": "Skyddshandskar – de är rena nog att palpera insticksstället efter desinfektion.",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Skyddshandskar är inte sterila. Att röra det desinfekterade insticksstället med dem riskerar smittspridning."
+        "feedback": "Fel, allvarligt! Skyddshandskar är inte sterila. Att röra det desinfekterade insticksstället riskerar smittspridning."
+      },
+      {
+        "id": "inl-01-c",
+        "label": "Sterila handskar – skyddshandskar räcker aldrig vid PVK-inläggning.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Skyddshandskar räcker som standard; sterila handskar behövs bara vid palpering efter desinfektion."
+      },
+      {
+        "id": "inl-01-d",
+        "label": "Inga handskar – handhygien räcker vid ett rent stick.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Skyddshandskar ska alltid användas vid inläggning på grund av blodexposition."
       }
     ]
   },
@@ -413,19 +483,31 @@
     "actions": [
       {
         "id": "inl-03-a",
-        "label": "Mandrängen dras ut och läggs direkt i avsedd avfallsbehållare. Den återförs aldrig in i PVK.",
+        "label": "Dra ut mandrängen och lägg den direkt i avfallsbehållaren – den återförs aldrig.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! En utdragen mandräng får aldrig återföras in i PVK eftersom katetern då kan skadas. Mandrängen läggs direkt i avfallsbehållaren.",
-        "icon": "1FA7A"
+        "feedback": "Rätt! En utdragen mandräng får aldrig återföras in i PVK eftersom katetern då kan skadas."
       },
       {
         "id": "inl-03-b",
-        "label": "Mandrängen kan återföras försiktigt om det behövs ett nytt försök.",
+        "label": "Dra ut mandrängen och återför den om sticket behöver justeras.",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! En utdragen mandräng får ALDRIG återföras – risken är att katetern skadas (avklipps av mandrängen).",
-        "icon": "1F5D1"
+        "feedback": "Fel, allvarligt! En utdragen mandräng får ALDRIG återföras – risken är att katetern avklipps."
+      },
+      {
+        "id": "inl-03-c",
+        "label": "Dra ut mandrängen och lägg den på brickan tills proceduren är klar.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Mandrängen ska direkt i avfallsbehållaren – den ska inte hanteras vidare."
+      },
+      {
+        "id": "inl-03-d",
+        "label": "Låt mandrängen sitta kvar tills PVK är fixerad.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Mandrängen dras ut när du fått blodåtergång och katetern ska fortsätta in i kärlet."
       }
     ]
   },
@@ -443,14 +525,28 @@
         "label": "När PVK är i kärlet.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Stasen släpps när PVK är i kärlet, inte tidigare och inte för sent."
+        "feedback": "Rätt! Stasen släpps när PVK är i kärlet – inte tidigare och inte för sent."
       },
       {
         "id": "inl-04-b",
-        "label": "Efter att jag har färdigfixerat förbandet.",
+        "label": "Direkt efter blodåtergången, innan katetern förts in.",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Stasen ska släppas när PVK är i kärlet – annars ökar risken för blödning och hematom."
+        "feedback": "Fel. Släpper du stasen för tidigt kan venen kollapsa och katetern missa kärlet."
+      },
+      {
+        "id": "inl-04-c",
+        "label": "Efter att förbandet är färdigfixerat.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Släpper du stasen för sent ökar risken för blödning och hematom."
+      },
+      {
+        "id": "inl-04-d",
+        "label": "Stasen kan sitta kvar under hela proceduren – det kvittar.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Stasen ska släppas när PVK är i kärlet."
       }
     ]
   },
@@ -465,17 +561,31 @@
     "actions": [
       {
         "id": "inl-05-a",
-        "label": "Spolning med Natriumklorid 9 mg/mL från endosbehållare eller förfylld spruta (10 mL för vuxna).",
+        "label": "Spolning med Natriumklorid 9 mg/ml från endosbehållare eller förfylld spruta (10 ml vuxen).",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Läget kontrolleras med spolning av NaCl 9 mg/mL (10 mL vuxna, anpassad mängd för barn). Endosbehållare eller förfylld spruta av smittskyddsskäl."
+        "feedback": "Rätt! Läget kontrolleras med spolning av NaCl 9 mg/ml (10 ml vuxen). Endosbehållare eller förfylld spruta av smittskyddsskäl."
       },
       {
         "id": "inl-05-b",
-        "label": "Det syns på att det kommer blod, mer kontroll behövs inte.",
+        "label": "Blodåtergången räcker som kontroll – spolning behövs inte.",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Läget kontrolleras alltid med spolning – blodåtergång är ingen fullständig kontroll av funktionen."
+        "feedback": "Fel. Blodåtergång är ingen fullständig kontroll av funktionen – spolning krävs alltid."
+      },
+      {
+        "id": "inl-05-c",
+        "label": "Spolning med destillerat vatten fungerar lika bra.",
+        "isCorrect": false,
+        "isCritical": true,
+        "feedback": "Fel, allvarligt! Endast Natriumklorid 9 mg/ml används – destillerat vatten ger hemolys."
+      },
+      {
+        "id": "inl-05-d",
+        "label": "Spolning från hur behållare som helst – det är volymen som spelar roll.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Endosbehållare eller förfylld spruta används av smittskyddsskäl."
       }
     ]
   },
@@ -639,17 +749,31 @@
     "actions": [
       {
         "id": "avl-01-a",
-        "label": "När den inte längre används, eller direkt efter avslutad behandling. Utvärdera behovet dagligen.",
+        "label": "När den inte längre används, eller direkt efter avslutad behandling – behovet utvärderas dagligen.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! PVK ska avlägsnas när den inte längre används. PVK ska ligga inne kortast möjliga tid. Behovet utvärderas dagligen."
+        "feedback": "Rätt! PVK ska avlägsnas när den inte längre används och behovet utvärderas dagligen."
       },
       {
         "id": "avl-01-b",
         "label": "Först när den är defekt eller efter en vecka.",
-        "isCritical": false,
         "isCorrect": false,
-        "feedback": "Fel. Vänta inte på komplikationer – utvärdera dagligen och avlägsna när den inte längre behövs."
+        "isCritical": false,
+        "feedback": "Fel. Vänta inte på komplikationer – utvärdera dagligen och avlägsna när den inte behövs."
+      },
+      {
+        "id": "avl-01-c",
+        "label": "Efter 72 timmar även om behandlingen pågår – bytet är allt som räknas.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Rutinbyte var 72:a timme gäller inte längre som huvudregel – avlägsna när den inte används, och utvärdera dagligen."
+      },
+      {
+        "id": "avl-01-d",
+        "label": "Först när patienten klagar på smärta eller rodnad.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vänta inte på symtom – behovet utvärderas dagligen."
       }
     ]
   },
@@ -749,14 +873,28 @@
         "label": "Rodnad, ömhet, svullnad, smärta och palpabel hårdhet över venen.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Tromboflebit kännetecknas av rodnad, ömhet, svullnad, smärta och palpabel hårdhet över venen. Frekvensen anges ofta mellan <1 och 40 %."
+        "feedback": "Rätt! Tromboflebit kännetecknas av rodnad, ömhet, svullnad, smärta och palpabel hårdhet över venen."
       },
       {
         "id": "komp-01-b",
-        "label": "Endast feber, inga lokala symtom.",
+        "label": "Feber och frossa utan lokala symtom.",
         "isCorrect": false,
         "isCritical": false,
         "feedback": "Fel. Tromboflebit ger framför allt lokala symtom från venen och insticksstället."
+      },
+      {
+        "id": "komp-01-c",
+        "label": "Blödning och läckage vid insticksstället.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Det är andra komplikationer – tromboflebit ger lokala inflammationstecken över venen."
+      },
+      {
+        "id": "komp-01-d",
+        "label": "Kylighet och blekhet i armen distalt om PVK.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Det pekar snarare på cirkulationspåverkan – tromboflebit ger rodnad, ömhet, svullnad och smärta."
       }
     ]
   },
@@ -778,10 +916,24 @@
       },
       {
         "id": "komp-02-b",
-        "label": "Spola hårdare så att kärlet öppnar sig igen.",
+        "label": "Spola med kraft så att kärlet öppnar sig igen.",
         "isCorrect": false,
         "isCritical": true,
-        "feedback": "Fel, allvarligt! Att spola mot en tromboflebit kan lossna en tromb och är patientsäkerhetsmässigt förbjudet. PVK ska avlägsnas och läkare kontaktas."
+        "feedback": "Fel, allvarligt! Att spola mot en tromboflebit kan lossna en tromb – patientsäkerhetsmässigt förbjudet."
+      },
+      {
+        "id": "komp-02-c",
+        "label": "Byt bara förbandet och observera 24 timmar till.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vid tromboflebit ska PVK avlägsnas – inte observeras vidare."
+      },
+      {
+        "id": "komp-02-d",
+        "label": "Låt PVK sitta kvar men flytta den till andra armen.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. PVK avlägsnas och en ny läggs in vid behov – man flyttar inte en PVK med tromboflebit."
       }
     ]
   },
@@ -796,17 +948,31 @@
     "actions": [
       {
         "id": "komp-03-a",
-        "label": "Var 72:a timme (var tredje dag) hos vuxna.",
+        "label": "Vuxna: rutinmässigt byte var 72:a timme; barn och svårt sår patienter kan förlängas vid extra noggrann inspektion.",
         "isCorrect": true,
         "isCritical": false,
-        "feedback": "Rätt! Byte rekommenderas var 72:a timme hos vuxna. Hos barn och svårstuckna patienter kan frekvensen förlängas vid extra noggrann inspektion minst var 8:e timme."
+        "feedback": "Rätt! Byte rekommenderas var 72:a timme hos vuxna."
       },
       {
         "id": "komp-03-b",
+        "label": "Varje dygn oavsett patientgrupp.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Vuxna: byte var 72:a timme – varje dygn är onödigt frekvent."
+      },
+      {
+        "id": "komp-03-c",
         "label": "En gång i veckan eller när den slutar fungera.",
         "isCorrect": false,
         "isCritical": false,
-        "feedback": "Fel. Vuxna: byte var 72:a timme. Vänta inte på att komplikationer ska uppstå."
+        "feedback": "Fel. Vuxna: byte var 72:a timme – vänta inte på att komplikationer ska uppstå."
+      },
+      {
+        "id": "komp-03-d",
+        "label": "Byte behövs aldrig rutinmässigt om insticksstället ser bra ut.",
+        "isCorrect": false,
+        "isCritical": false,
+        "feedback": "Fel. Rutinbyte var 72:a timme rekommenderas hos vuxna, oavsett hur insticksstället ser ut."
       }
     ]
   }
